@@ -17,7 +17,7 @@ public class ExecutorDemo1 {
 		ExecutorService newCachedThreadPool2 = Executors.newCachedThreadPool();
 		ArrayList<Future<Integer>> arrayList = new ArrayList<Future<Integer>>();
 		
-		for(int i=0; i<10; i++){
+		for(int i=0; i<10; i++){ 
 			arrayList.add(newCachedThreadPool2.submit(new MyThread2(i)));
 		}
 		
